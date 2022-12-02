@@ -6,10 +6,14 @@ class GuestRepository private constructor(){
         private lateinit var repository: GuestRepository
 
         fun getInstance(): GuestRepository {
-            if (!Companion::repository.isInitialized) {
+            if (!::repository.isInitialized) {
                 repository = GuestRepository()
             }
             return repository
         }
+    }
+
+    fun save() {
+
     }
 }
