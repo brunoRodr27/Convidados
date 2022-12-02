@@ -1,6 +1,7 @@
 package com.example.convidados.repository
 
 import android.content.Context
+import com.example.convidados.GuestModel
 
 class GuestRepository private constructor(context: Context){
 
@@ -17,7 +18,7 @@ class GuestRepository private constructor(context: Context){
         }
     }
 
-    fun save() {
+    fun get() {
 
     }
 }
